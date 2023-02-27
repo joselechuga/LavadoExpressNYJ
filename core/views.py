@@ -1,7 +1,7 @@
 import requests
 from django.shortcuts import render
 
-def home(request):
+def index(request):
 
     url = "https://638cc70fd2fc4a058a5fbbdc.mockapi.io/s"
 
@@ -12,7 +12,7 @@ def home(request):
         'servicios': servicios
     }
 
-    return render(request,'core/home.html',dato)
+    return render(request,'core/index.html',dato)
 
 
 def carpinteria(request):
